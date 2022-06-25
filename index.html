@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Chatbot</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <pre>
+    <code>
+      import requests
+i = 1
+while i == 1:
+  a = input(">>> ")
+  query = {"message": a, "botname": "Iris", "ownername": "Siddharth", "user": "Jake"}
+  url = "https://api.affiliateplus.xyz/api/chatbot"
+  b = requests.get(url , params = query)
+  data = b.json()
+  msg = data["message"]
+  print(msg)
+    </code>
+  </pre>
+
+  <h5>Made by Siddharth</h5>
+</body>
+
+</html>
